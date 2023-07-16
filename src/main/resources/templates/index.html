@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Your Review</title>
+</head>
+<body>
+    <form data-th-action="@{/review}" method="post">
+
+        <table>
+            <tr>
+                <td><label for="name">User Name: </label></td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="rating"></label>Rating: </td>
+                <td><input type="tel" name="rating" placeholder="Only values from 0-10"></td>
+            </tr>
+            <tr>
+                <td><label for="comments">Comments: </label></td>
+                <td><textarea name="comments" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="gid">Game ID: </label></td>
+                <td><input type="tel" name="gid" placeholder="Type game ID here"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+       
+
+    </form>
+</body>
+</html>

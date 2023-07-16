@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Review</title>
+</head>
+<body>
+    <form data-th-action="@{/review/${review_id}}" method="post">
+        <input type="hidden" name="_method" value="PUT">
+        <tr>
+            <td><label for="comments">Comments: </label></td>
+            <td><textarea name="comments" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="rating"></label>Rating: </td>
+            <td><input type="tel" name="rating" placeholder="Only values from 0-10"></td>
+        </tr>
+        <tr>
+            <td><button type="submit">Submit</button></td>
+        </tr>
+    </table>  
+
+    </form>
+    <table>
+         
+</body>
+</html>
